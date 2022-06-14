@@ -4,19 +4,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 `
 
-interface ThemeInterface {
+const theme = {
   colors: {
-    primary: string
-  }
-}
-
-const theme: ThemeInterface = {
-  colors: {
-    primary: '#0070f3',
+    primary: '#f2f0ed',
+    background: '#080a0b'
   },
 }
 
