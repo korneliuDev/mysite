@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
                     />
 
                     {/* OpenGraph card */}
-                    <meta property="og:url" content={`${config.url}${location}/`} />
+                    <meta property="og:url" content={config.url} />
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content={config.title} />
                     <meta property="og:description" content={config.description} />
