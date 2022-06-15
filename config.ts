@@ -9,7 +9,7 @@ const config = {
     title: "Medzik",
     description: "Hi! I'm Oskar, I'm a self-taught programmer, a Linux and FOSS enthusiast.",
     url: "https://medzik.xyz",
-    thumbnail: "https://cdn.medzik.xyz/xiearrd.png",
+    thumbnail: "https://cdn.medzik.xyz/Id5w0av.png",
     links,
 }
 
