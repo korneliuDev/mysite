@@ -1,54 +1,62 @@
 import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import config from '../config'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    static async getInitialProps(
+        ctx: DocumentContext
+    ): Promise<DocumentInitialProps> {
+        const sheet = new ServerStyleSheet()
+        const originalRenderPage = ctx.renderPage
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+        try {
+            ctx.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: (App) => (props) =>
+                        sheet.collectStyles(<App {...props} />),
+                })
 
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: [
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>,
-        ],
-      }
-    } finally {
-      sheet.seal()
+            const initialProps = await Document.getInitialProps(ctx)
+            return {
+                ...initialProps,
+                styles: [
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>,
+                ],
+            }
+        } finally {
+            sheet.seal()
+        }
     }
-  }
 
-  render() {
-    return (
-      <Html>
-        <Head>
-          {/* Add the favicon */}
-          <link rel="shortcut icon" href="/favicon.svg" />
+    render() {
+        return (
+            <Html>
+                <Head>
+                    {/* Add the favicon */}
+                    <link rel="shortcut icon" href="/favicon.svg" />
 
-          {/* Add `Open Sans` font */}
-          <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=optional"
-            rel="stylesheet"
-          />
-        </Head>
+                    {/* Add `Open Sans` font */}
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Open+Sans&display=optional"
+                        rel="stylesheet"
+                    />
 
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+                    {/* OpenGraph card */}
+                    <meta property="og:url" content={`${config.url}${location}/`} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content={config.title} />
+                    <meta property="og:description" content={config.description} />
+                    <meta property="og:image" content={config.thumbnail} />
+                </Head>
+
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
+        )
+    }
 }
