@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { GitHub, Reddit } from '@mui/icons-material'
+import { GitHub, Google, Reddit } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import config, { links } from '../config'
 import AvatarSvg from '../public/avatar.svg'
@@ -38,6 +38,11 @@ export default function Home() {
                 {/* GitLab */}
                 <IconButton color="inherit" href={links.gitlab} target="_blank">
                     <GitLab />
+                </IconButton>
+
+                {/* Google Developers */}
+                <IconButton color="inherit" href={links.googleDevelopers} target="_blank">
+                    <Google />
                 </IconButton>
 
                 {/* Discord */}
