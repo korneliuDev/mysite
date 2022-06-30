@@ -1,0 +1,82 @@
+<script lang="ts">
+  import { links } from './config';
+  import Avatar from './lib/Avatar.svelte';
+  import Discord from './lib/icons/Discord.svelte';
+  import GitHub from './lib/icons/GitHub.svelte';
+  import GitLab from './lib/icons/GitLab.svelte';
+  import Google from './lib/icons/Google.svelte';
+  import Reddit from './lib/icons/Reddit.svelte';
+</script>
+
+<!-- <div>
+  s
+</div> -->
+
+<div>
+  <Avatar />
+
+  <h1>Hello, I'm Oskar</h1>
+
+  <p>I'm a self-taught programmer. I use Arch Linux and I like open source software.</p>
+
+  <footer>
+    <a href={links.github}>
+      <GitHub />
+    </a>
+
+    <a href={links.gitlab}>
+      <GitLab />
+    </a>
+
+    <a href={links.googleDevelopers}>
+      <Google />
+    </a>
+
+    <a href={links.discord}>
+      <Discord />
+    </a>
+
+    <a href={links.reddit}>
+      <Reddit />
+    </a>
+  </footer>
+</div>
+
+<style>
+  :root {
+    margin: 0;
+    padding: 0;
+    color: #F2F0ED;
+    background-color: #080a0b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    padding-top: 0.5em;
+  }
+
+  a {
+    color: #F2F0ED;
+    text-decoration: none;
+  }
+</style>
