@@ -1,16 +1,12 @@
 <script lang="ts">
-  import { links } from './config';
-  import Avatar from './lib/Avatar.svelte';
-  import Discord from './lib/icons/Discord.svelte';
-  import GitHub from './lib/icons/GitHub.svelte';
-  import GitLab from './lib/icons/GitLab.svelte';
-  import Google from './lib/icons/Google.svelte';
-  import Reddit from './lib/icons/Reddit.svelte';
+  import { links } from './config'
+  import Avatar from './lib/Avatar.svelte'
+  import Discord from './lib/icons/Discord.svelte'
+  import GitHub from './lib/icons/GitHub.svelte'
+  import GitLab from './lib/icons/GitLab.svelte'
+  import Google from './lib/icons/Google.svelte'
+  import Reddit from './lib/icons/Reddit.svelte'
 </script>
-
-<!-- <div>
-  s
-</div> -->
 
 <div>
   <Avatar />
@@ -46,7 +42,7 @@
   :root {
     margin: 0;
     padding: 0;
-    color: #F2F0ED;
+    color: #f2f0ed;
     background-color: #080a0b;
     min-height: 100vh;
     display: flex;
@@ -55,8 +51,8 @@
     justify-content: center;
     align-items: center;
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   div {
@@ -76,7 +72,7 @@
   }
 
   a {
-    color: #F2F0ED;
+    color: #f2f0ed;
     text-decoration: none;
   }
 </style>

@@ -3,6 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.30
   '@tsconfig/svelte': ^2.0.1
+  prettier: ^2.7.1
+  prettier-plugin-svelte: ^2.7.0
   svelte: ^3.44.0
   svelte-check: ^2.2.7
   svelte-preprocess: ^4.10.7
@@ -13,6 +15,8 @@ specifiers:
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.49_svelte@3.44.0+vite@2.9.13
   '@tsconfig/svelte': 2.0.1
+  prettier: 2.7.1
+  prettier-plugin-svelte: 2.7.0_7gm6d67giey5dvtb7akbsdpho4
   svelte: 3.44.0
   svelte-check: 2.2.7_svelte@3.44.0
   svelte-preprocess: 4.10.7_t65cnlizgksbnwolvcl5btz3ly
@@ -649,6 +653,22 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /prettier-plugin-svelte/2.7.0_7gm6d67giey5dvtb7akbsdpho4:
+    resolution: {integrity: sha512-fQhhZICprZot2IqEyoiUYLTRdumULGRvw0o4dzl5jt0jfzVWdGqeYW27QTWAeXhoupEZJULmNoH3ueJwUWFLIA==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.7.1
+      svelte: 3.44.0
+    dev: true
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /queue-microtask/1.2.3:
