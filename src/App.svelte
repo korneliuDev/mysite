@@ -50,6 +50,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
@@ -68,7 +69,7 @@
   }
 
   footer {
-    padding-top: 0.5em;
+    margin-top: 0.5em;
   }
 
   a {
