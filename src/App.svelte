@@ -11,9 +11,10 @@
 <div>
   <Avatar />
 
-  <h1>Hello, I'm Oskar</h1>
+  <h1>Hello, I'm Kornel</h1>
 
-  <p>I'm a self-taught programmer. I use Arch Linux and I like open source software.</p>
+  <p>I'm a self-taught programmer. I use Mint Linux and 
+I also like playing computer games and football!</p>
 
   <footer>
     <a href={links.github}>

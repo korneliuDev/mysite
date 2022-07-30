@@ -1,9 +1,9 @@
 export const links = {
-  github: 'https://github.com/MedzikUser',
-  gitlab: 'https://gitlab.com/Medzik',
-  googleDevelopers: 'https://g.dev/medzik',
-  discord: 'https://dsc.bio/medzik',
-  reddit: 'https://www.reddit.com/user/MedzikUser'
+  github: 'https://github.com/korneliuDev',
+  gitlab: 'https://gitlab.com/korneliudev',
+  googleDevelopers: 'https://g.dev/korneliudev',
+  discord: 'https://dsc.bio/korneliudev',
+  reddit: 'https://www.reddit.com/user/blvckkornel'
 }
 
 const config = {
