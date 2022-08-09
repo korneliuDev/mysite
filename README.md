@@ -1,1 +1,1 @@
-# PODJEBANE OD MEDZIK NA ZYCZENIE KORNELIUDEV
+Zapożyczone od medzik za jego pozwoleniem!
