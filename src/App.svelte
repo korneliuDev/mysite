@@ -13,7 +13,7 @@
 
   <h1>Hello, I'm Kornel</h1>
 
-  <p>I'm a self-taught programmer. I use Mint Linux and 
+  <p>I'm a self-taught programmer. I use Windows 10 and 
 I also like playing computer games and football!</p>
 
   <footer>
