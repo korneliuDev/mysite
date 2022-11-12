@@ -13,8 +13,8 @@
 
   <h1>Hello, I'm Kornel</h1>
 
-  <p>I'm a self-taught programmer. I use Windows 10 and 
-I also like playing computer games and football!</p>
+  <p>I am a self-taught developer and penetration tester. I am using Windows 10.
+I also like playing on the computer! My favorite sport is kickboxing.</p>
 
   <footer>
     <a href={links.github}>
